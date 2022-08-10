@@ -21,8 +21,7 @@ public class FilmesController {
     @ResponseStatus(value = HttpStatus.OK)
     @GetMapping(value = "/filmes", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Passing> getFilmes() throws IOException {
-        var teste = apiService.getFilmes();
-        return teste;
+        return apiService.getFilmes();
     }
 
 }
