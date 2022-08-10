@@ -31,7 +31,10 @@ public class ApiServiceImpl implements ApiService{
                     attributes.get(2).text()
 
             );
-            playersObjects.add(passing);
+            while (playersObjects.size() <= 9) {
+                playersObjects.add(passing);
+                break;
+            }
         }
         for (Passing passing : playersObjects) {
             converterToJson(passing);
